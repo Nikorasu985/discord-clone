@@ -1,32 +1,61 @@
-*, ::after, ::before{
+@font-face {
+  font-family: "GG Sans";
+  src: url("../resources/fonts/gg-sans-2/gg sans Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GG Sans";
+  src: url("../resources/fonts/gg-sans-2/gg sans Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GG Sans";
+  src: url("../resources/fonts/gg-sans-2/gg sans Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GG Sans";
+  src: url("../resources/fonts/gg-sans-2/gg sans Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+*,
+::after,
+::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     background: transparent;
     text-decoration: none;
     color: white;
+    font-family: "GG Sans", sans-serif;
 }
 
-body{
+body {
     background-image: url(../resources/background.svg);
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.logo{
+.logo {
     padding: 48px;
 }
 
-.container{
-    
-}
-
-.login-container{
+.login-container {
+    padding: 40px;
+    position: fixed;
+    width: 50%;
     background-color: #2C2D34;
     display: flex;
     justify-content: center;
-    align-items: center;
+    border-radius: 10px;
+
 }
-
-
