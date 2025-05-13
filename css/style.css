@@ -52,10 +52,25 @@ body {
 .login-container {
     padding: 40px;
     position: fixed;
-    width: 50%;
+    width: 40%;
     background-color: #2C2D34;
     display: flex;
     justify-content: center;
     border-radius: 10px;
+}
 
+.welcome-text{
+    text-align: center;
+
+}
+
+.welcome-text h1{
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.welcome-text p, .form p, .qr p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
 }
