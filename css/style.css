@@ -29,48 +29,72 @@
 *,
 ::after,
 ::before {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background: transparent;
-    text-decoration: none;
-    color: white;
-    font-family: "GG Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: transparent;
+  text-decoration: none;
+  color: white;
+  font-family: "GG Sans", sans-serif;
 }
 
 body {
-    background-image: url(../resources/background.svg);
-    min-height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url(../resources/background.svg);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .logo {
-    padding: 48px;
+  padding: 48px;
 }
 
 .login-container {
-    padding: 40px;
-    position: fixed;
-    width: 40%;
-    background-color: #2C2D34;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
+  padding: 30px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 57%;
+  background-color: #323339;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
 }
 
-.welcome-text{
-    text-align: center;
-
+.login-form {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.welcome-text h1{
-    font-weight: 600;
-    font-size: 1.4rem;
+.welcome-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
 }
 
-.welcome-text p, .form p, .qr p{
-    font-size: 1rem;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.8);
+.welcome-text h1 {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.welcome-text p,
+.form p,
+.qr p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+label{
+  
+}
+
+.qr{
+  width: 40%;
 }
