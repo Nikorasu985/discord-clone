@@ -51,11 +51,12 @@ body {
 }
 
 .login-container {
+  border: 1px solid rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 41%;
+  min-width: 41%;
   background-color: #323339;
   display: flex;
   justify-content: center;
@@ -80,7 +81,8 @@ body {
 
 .welcome-text h1 {
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  transform: scaleY(0.95);
 }
 
 .welcome-text p,
@@ -123,7 +125,7 @@ input[type="password"]{
 }
 
 input[type="email"]{
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 input[type="submit"]{
@@ -134,7 +136,7 @@ input[type="submit"]{
   font-size: 1rem;
   font-weight: 500;
   transition: all 0.2s ease ;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 input[type="email"]:focus, input[type="password"]:focus{
