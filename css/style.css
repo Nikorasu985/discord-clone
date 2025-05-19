@@ -51,12 +51,11 @@ body {
 }
 
 .login-container {
-  padding: 30px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 57%;
+  width: 41%;
   background-color: #323339;
   display: flex;
   justify-content: center;
@@ -64,10 +63,11 @@ body {
 }
 
 .login-form {
+  padding: 30px 15px 30px 30px;
   width: 60%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .welcome-text {
@@ -91,10 +91,123 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 
+form{
+  display: flex;
+  flex-direction: column;
+
+}
+
 label{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.75rem;
+  font-weight: 700;
+  transform: scaleY(0.875);
+  letter-spacing: 0.02rem;
+  margin-bottom: 10px;
+}
+
+form strong{
+  color: rgb(250, 146, 146);
+}
+
+input[type="email"], 
+input[type="password"]{
+  border: 1px rgba(255, 255, 255, 0.1) solid;
+  background-color: #29282e;
+  height: 2.8rem;
+  border-radius: 10px;
+  transition: all 0.3s ease !important;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  padding-left: 10px;
+}
+
+input[type="email"]{
+  margin-bottom: 30px;
+}
+
+input[type="submit"]{
+  border: 1px rgba(255, 255, 255, 0.1) solid;
+  background-color: #6064f4;
+  height: 2.8rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s ease ;
+  margin-bottom: 10px;
+}
+
+input[type="email"]:focus, input[type="password"]:focus{
+  transition-delay: 0.3s;
+  outline: 1px #7ab0f4 solid;
+}
+
+input[type="submit"]:hover{
+  background-color: rgba(96, 101, 244, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+a{
+  color: #8d9ef9;
+  font-weight: 500;
+  font-size: 0.85rem;
   
+}
+
+form a{
+  margin-bottom: 20px;
+}
+
+form p{
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-weight: 200 !important;
+  font-size: 0.85rem !important;
+  letter-spacing: 0.02rem !important; 
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 .qr{
   width: 40%;
+  padding: 30px 15px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+}
+
+.img-container{
+  position: relative;
+}
+
+.qr-img{
+  width: 175px;
+  border-radius: 5px;
+}
+
+.qr-icon{
+  position: absolute;
+  width: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.qr-text{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+}
+
+.qr-text h2{
+  font-weight: 600;
+}
+
+.qr-text strong{
+  color: rgba(255, 255, 255, 0.8);
 }

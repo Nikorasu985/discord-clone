@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Discord</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -22,27 +23,27 @@
             <div class="form">
                 <form action="">
                     <label for="email">EMAIL OR PHONE NUMBER <strong>*</strong></label>
-                    <br>
                     <input type="email" name="email" id="">
-                    <br>
                     <label for="password">PASSWORD <strong>*</strong></label>
-                    <br>
                     <input type="password" name="password" id="">
-                    <br>
                     <a href="">Forgot your password?</a>
-                    <br>
-                    <input type="submit" value="Iniciar sesión">
+                    <input type="submit" value="Log In">
                     <p>Need an account? <a href="">Register</a></p>
                 </form>
             </div>
         </div>
         <div class="qr">
-            <img src="resources/qr.png" alt="">
-            <h2>Iniciar sesión con código QR</h2>
-            <p>Escanéalo con la <strong>aplicación de móvil de Discord</strong>
-                para iniciar sesión de forma instantánea.
-            </p>
-            <a href="">O inicia sesión con una clave de acceso</a>
+            <div class="img-container">
+                <img class="qr-img" src="resources/qr.png" alt="">
+                <img class="qr-icon" src="resources/qr-icon.png" alt="">
+            </div>
+            <div class="qr-text">
+                <h2>Log in with QR Code</h2>
+                <p>Scan this with the <strong>Discord mobile app</strong>
+                    to log in instantly.
+                </p>
+                <a href="">Or log in with passkey</a>
+            </div>
         </div>
     </div>
 </body>
