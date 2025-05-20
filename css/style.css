@@ -56,7 +56,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 41%;
+  width: 800px;
   background-color: #323339;
   display: flex;
   justify-content: center;
@@ -179,7 +179,6 @@ a:hover{
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 25px;
 }
 
 .img-container{
