@@ -11,7 +11,7 @@
 
 <body>
     <div class="logo">
-        <img src="resources/logo.svg" alt="">
+        <img src="resources/logo.svg" alt="">  
     </div>
 
     <div class="login-container">
@@ -21,18 +21,18 @@
                 <p>We're so excited to see you again!</p>
             </div>
             <div class="form">
-                <form action="">
+                <form action="" method="post">
                     <label for="email">EMAIL OR PHONE NUMBER <strong>*</strong></label>
-                    <input type="email" name="email" id="">
+                    <input type="email" name="email" id="" required>
                     <label for="password">PASSWORD <strong>*</strong></label>
-                    <input type="password" name="password" id="">
+                    <input type="password" name="password" id="" required>
                     <a href="">Forgot your password?</a>
                     <input type="submit" value="Log In">
                     <p>Need an account? <a href="">Register</a></p>
                 </form>
             </div>
         </div>
-        <div class="qr">
+        <div class="qr disabled">
             <div class="img-container">
                 <img class="qr-img" src="resources/qr.png" alt="">
                 <img class="qr-icon" src="resources/qr-icon.png" alt="">
@@ -45,7 +45,7 @@
                 <a href="">Or sign in with passkey</a>
             </div>
         </div>
-    </div>
+    </div> 
 </body>
 
-</html>
+</html>      

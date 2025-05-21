@@ -76,7 +76,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 .welcome-text h1 {
@@ -137,6 +137,7 @@ input[type="submit"]{
   font-weight: 500;
   transition: all 0.2s ease ;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 
 input[type="email"]:focus, input[type="password"]:focus{
@@ -211,4 +212,26 @@ a:hover{
 
 .qr-text strong{
   color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 825px) {
+  .disabled{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 0 !important;
+  }
+
+  .login-container{
+    margin: 0;
+    padding: 0;
+    width: 490px ;
+    height: 425px;
+  }
+
+  .login-form{
+    width: 100%;
+    padding: 30px;
+  }
+
 }
